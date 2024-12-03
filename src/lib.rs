@@ -39,6 +39,8 @@
 //! You can find more details in
 //! [README.md](https://github.com/tikv/pprof-rs/blob/master/README.md)
 
+#![cfg(unix)]
+
 /// Define the MAX supported stack depth. TODO: make this variable mutable.
 pub const MAX_DEPTH: usize = 128;
 
